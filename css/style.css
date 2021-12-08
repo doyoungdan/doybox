@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Playfair+Display:ital@1&display=swap');
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.blackoveray {    
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+}
+
+.slideshow {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+  
+  .slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-animation-name: kenburns;
+    animation-name: kenburns;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .slideshow-image:nth-child(1) {
+    -webkit-animation-name: kenburns-1;
+    animation-name: kenburns-1;
+    z-index: 5;
+  }
+  
+  .slideshow-image:nth-child(2) {
+    -webkit-animation-name: kenburns-2;
+    animation-name: kenburns-2;
+    z-index: 4;
+  }
+  
+  .slideshow-image:nth-child(3) {
+    -webkit-animation-name: kenburns-3;
+    animation-name: kenburns-3;
+    z-index: 3;
+  }
+  
+  .slideshow-image:nth-child(4) {
+    -webkit-animation-name: kenburns-4;
+    animation-name: kenburns-4;
+    z-index: 2;
+  }
+
+.count_wrap {
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;    
+    transform:translate(-50%,-50%);
+    z-index: 1;
+    color: #fff;
+}
+
+.count_wrap h3 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin: 0 auto;
+    line-height: 0.5;
+}
+
+.count {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.count .m_text {
+    font-size: 8.0rem;
+    padding-bottom: 35px;
+}
+
+.count .s_text {
+    display: block;
+    font-size: 1.5rem;
+    padding-right: 20px;
+}
+
+.sec, .hr, .min{
+    width: 165px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.day {
+    width: 165px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.count .colon {
+    font-size: 6.0rem;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+.link {
+    z-index: 1111;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    cursor: pointer;
+}
+
+.size3 {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+.link a i {    
+    color: #fff;
+    vertical-align: -5px;
+}
+
+.size3:hover {
+    background-color: #fff;
+}
+
+.size3:hover i {
+    color: #555;
+}
+
+@-webkit-keyframes 
+    kenburns-1 {  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    1.5625% {
+    opacity: 1;
+    }
+    23.4375% {
+    opacity: 1;
+    }
+    26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+    transform: scale(1.21176);
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+
+    @keyframes 
+    kenburns-1 {  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    1.5625% {
+    opacity: 1;
+    }
+    23.4375% {
+    opacity: 1;
+    }
+    26.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    98.4375% {
+    opacity: 0;
+    -webkit-transform: scale(1.21176);
+    transform: scale(1.21176);
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+
+    @-webkit-keyframes 
+    kenburns-2 {  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    26.5625% {
+    opacity: 1;
+    }
+    48.4375% {
+    opacity: 1;
+    }
+    51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    }
+
+    @keyframes 
+    kenburns-2 {  23.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    26.5625% {
+    opacity: 1;
+    }
+    48.4375% {
+    opacity: 1;
+    }
+    51.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    }
+
+    @-webkit-keyframes 
+    kenburns-3 {  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    51.5625% {
+    opacity: 1;
+    }
+    73.4375% {
+    opacity: 1;
+    }
+    76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    }
+
+    @keyframes 
+    kenburns-3 {  48.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    51.5625% {
+    opacity: 1;
+    }
+    73.4375% {
+    opacity: 1;
+    }
+    76.5625% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    }
+
+    @-webkit-keyframes 
+    kenburns-4 {  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    76.5625% {
+    opacity: 1;
+    }
+    98.4375% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    }
+
+    @keyframes 
+    kenburns-4 {  73.4375% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+    76.5625% {
+    opacity: 1;
+    }
+    98.4375% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    }
