@@ -82,6 +82,15 @@
     line-height: 0.5;
 }
 
+.count_wrap p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lato-Hairline';
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
 .count {
     position: relative;
     font-family: 'PlayfairDisplay-Italic';
@@ -130,8 +139,13 @@
     cursor: pointer;
 }
 
+.size3:first-child{
+    margin-right: 20px;
+}
+
 .size3 {
     position: relative;
+    display: inline-block;
     width: 36px;
     height: 36px;
     text-align: center;
