@@ -1,4 +1,18 @@
 @charset "utf-8";
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Lato-Hairline;
+    src: url('../fonts/Lato/Lato-Hairline.ttf'); 
+  }
+  
+  @font-face {
+    font-family: PlayfairDisplay-Italic;
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf'); 
+  }
 
 body, html {
     width: 100%;
