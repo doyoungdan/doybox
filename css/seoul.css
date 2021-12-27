@@ -1,0 +1,231 @@
+.show {
+    display: block !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    max-width: 720px;
+    width: 100%;
+    z-index: 500;
+    width: 100%;
+    height: 55px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 55px;
+    cursor: default;
+    color: #fff;
+}
+
+.header a:first-child {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    line-height: 55px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+}
+
+.header a:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.inner_wrap {
+    position: relative;
+    display: block;
+    padding: 55px 0 0;
+    background: url(../images/header_bg.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.tag {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+}
+
+.tag span{
+    color: #fff;
+    background: #6437bf;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    line-height: 80px;
+    cursor: default;
+}
+
+.calendar {
+    position: relative;
+    display: block;
+    cursor: default;
+}
+
+.calendar div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.calendar .month {
+    color: #14b9cb;
+    background-color: #0e081f;
+}
+
+.calendar .month span {
+    display: block;
+    line-height: 18px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.calendar .month span strong{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.calendar .day {
+    color: #fff;
+    background-color: #26203a;
+}
+
+.calendar .day span {
+    display: block;
+    line-height: 18px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.calendar .day span strong{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.calendar .day:last-child {
+    background: #14b9cb;
+}
+
+.outer_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.movie_info {
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+}
+
+.movie_info h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000;
+    cursor: default;
+}
+
+.movie_info p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #000;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+.movie_info .movie_place {
+    position: absolute;
+    right: 20px;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+.movie_info p span {
+    color: #999;
+}
+
+.movie_time {
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    width: 100px;
+    height: 50px;
+    line-height: 1.1;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.movie_time .time {
+    display: block;
+    font-size: 1.3rem;
+    color: #030303;
+    font-weight: 300;
+}
+
+.movie_time span {
+    font-size: 0.8rem;
+    color: #999;
+    line-height: 1.5;
+}
+
+.txt {
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-weight: 300;
+    color: #999;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+.cafe_info {    
+    display: none;
+    position: relative;
+    padding: 20px;
+}
+
+.cafe_info div {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cafe_info p {
+    padding: 0 25px;
+    font-size: 1.0rem;
+    line-height: 2;
+}
+
+.menu_img {
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+}

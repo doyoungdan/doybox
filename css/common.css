@@ -34,11 +34,12 @@ hr, caption, legend {
 	display: none;
 }
 a { 
-	color: #363636;
+	color: #333;
 	text-decoration: none;
     vertical-align: middle;
 	border: none;
 	cursor: pointer;
+	font-weight: 400;
 }
 button {
 	overflow: hidden;

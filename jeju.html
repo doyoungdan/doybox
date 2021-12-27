@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>DOYOUNG THEATER, DOYBOX</title>
+    <script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jeju.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <a href="https://doybox.site/main.html"><i class="zmdi zmdi-arrow-left"></i></a>
+            <h1>극장별 예매</h1>
+            <a href="https://doybox.site/theater.html"><p>극장변경</p></a>
+        </div>
+        <div class="container">
+            <div class="inner_wrap">
+                <div class="tag"><span>티엔미미</span></div>
+                <div class="calendar">
+                    <div class="month">
+                        <span>2022<br><strong>01월</strong></span>
+                    </div>
+                    <div class="day">
+                        <span><strong>30일</strong><br>일</span>
+                    </div>
+                    <div class="day">
+                        <span><strong>31일</strong><br>월</span>
+                    </div>
+                    <div class="month">
+                        <span>2022<br><strong>02월</strong></span>
+                    </div>
+                    <div class="day">
+                        <span><strong>01일</strong><br>화</span>
+                    </div>
+                </div>
+            </div>
+            <div class="outer_wrap">
+                <div class="movie_info">
+                    <h3>Dear My Favorite</h3>
+                    <p>aDulescentia : You</p>
+                    <p class="movie_place">도영극장 [D관] <span>201석</span></p>
+                    <div class="movie_time">
+                        <span class="time">02:01</span>
+                        <span>오전</span>
+                    </div>
+                    <span class="txt">201석</span>
+                </div>
+                <div class="cafe_info">
+                    <div><i class="zmdi zmdi-info"></i> 제주 티엔미미</div>
+                    <p><i class="zmdi zmdi-pin"></i> 제주특별자치도 제주시 연동4길 8</p>
+                    <p><i class="zmdi zmdi-time"></i> OPEN ?? ~ ??</p>  
+                    <a href="https://www.instagram.com/tnmimi_jeju" target="_blank"><p><i class="zmdi zmdi-instagram"></i> Instagram</p></a>
+                    <a href="https://twitter.com/eventcafeinjeju" target="_blank"><p><i class="zmdi zmdi-twitter"></i> Twitter</p></a>
+                    <div class="menu_img">
+                        메뉴판이미지
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".movie_time").on("click", function () {
+                $(".cafe_info").show();
+            });
+        });
+    </script>
+</body>
+</html>
