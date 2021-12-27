@@ -24,7 +24,7 @@
 .header a:first-child {
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 20px;
     line-height: 55px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -36,7 +36,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 30px;
+    right: 20px;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 2px 8px;
