@@ -68,6 +68,11 @@
     z-index: 1;
 }
 
+.main_menu button {
+    background: none;
+    width : 100%;
+}
+
 .item {
     background-color: #fff;
     width: calc(50% - 5px);
