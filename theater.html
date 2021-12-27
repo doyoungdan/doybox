@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>DOYOUNG THEATER, DOYBOX</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/theater.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1>극장 선택</h1>
+            <a href="https://doybox.site/main.html"><i class="zmdi zmdi-close"></i></a>
+        </div>
+        <div class="choice_text">
+            <p>최대 1개까지 선택할 수 있습니다.</p>
+            <span class="seoul_tag">카페 지금여기 <i class="zmdi zmdi-close"></i></span>
+            <span class="jeju_tag">티엔미미 <i class="zmdi zmdi-close"></i></span>
+        </div>
+        <div class="theater_list">
+            <div class="city_list">
+                <ul>
+                    <li class="seoul_list"><a>서울</a></li>
+                    <li class="jeju_list"><a>제주</a></li>
+                </ul>
+            </div>
+            <div class="cafe_list">
+                <ul>
+                    <li class="seoul_cafe"><a>카페 지금여기</a></li>
+                    <li class="jeju_cafe"><a>티엔미미</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_btn">
+            <div class="btn_before">
+                <a>선택 완료</a>
+            </div> 
+            <div class="seoul">
+                <a href="./seoul.html">선택 완료</a>
+            </div>
+            <div class="jeju">
+                <a href="./jeju.html">선택 완료</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".seoul_list").on("click", function () {
+                $(this).addClass("on");
+                $(".seoul_cafe").addClass("show");
+                $(".jeju_cafe").removeClass("show");
+                $(".jeju_cafe").removeClass("on");
+                $(".jeju_list").removeClass("on");
+            });
+            $(".seoul_cafe").on("click", function () {
+                $(this).addClass("on");
+                $(".btn_before").hide();
+                $(".seoul").show();
+                $(".choice_text p").hide();
+                $(".seoul_tag").show();
+                $(".jeju_tag").hide();
+            });
+            $(".seoul_tag").on("click", function () {
+                $(this).hide();
+                $(".seoul_cafe").removeClass("show");
+                $(".seoul_cafe").removeClass("on");
+                $(".seoul_list").removeClass("on");
+                $(".seoul").hide();
+                $(".btn_before").show();
+                $(".choice_text p").show();
+            });
+
+            $(".jeju_list").on("click", function () {
+                $(this).addClass("on");
+                $(".jeju_cafe").addClass("show");
+                $(".seoul_cafe").removeClass("show");
+                $(".seoul_cafe").removeClass("on");
+                $(".seoul_list").removeClass("on");
+            });
+            $(".jeju_cafe").on("click", function () {
+                $(this).addClass("on");
+                $(".btn_before").hide();
+                $(".jeju").show();
+                $(".choice_text p").hide();
+                $(".jeju_tag").show();
+                $(".seoul_tag").hide();
+            });
+            $(".jeju_tag").on("click", function () {
+                $(this).hide();
+                $(".jeju_cafe").removeClass("show");
+                $(".jeju_cafe").removeClass("on");
+                $(".jeju_list").removeClass("on");
+                $(".jeju").hide();
+                $(".btn_before").show();
+                $(".choice_text p").show();
+            });
+        });
+    </script>
+</body>
+</html>
