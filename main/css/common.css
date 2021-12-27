@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	box-sizing:border-box;
+}
+body {
+    overflow: visible;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, ul, li, span, p {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+img, fieldset,button {
+	border:0 none;
+}
+img {
+	vertical-align: top;
+}
+li {
+	list-style: none;
+}
+hr, caption, legend {
+	display: none;
+}
+a { 
+	color: #363636;
+	text-decoration: none;
+    vertical-align: middle;
+	border: none;
+	cursor: pointer;
+}
+button {
+	overflow: hidden;
+	cursor: pointer;
+}
+button span {
+	visibility: hidden;
+}
+address, em {
+	font-style: normal;
+}
+button, input, select, textarea, a {
+	vertical-align: middle;
+}
+select {
+	line-height: 18px;
+	height: 18px;
+}
+input:focus {
+	outline: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
+select,
+input[type="text"],
+input[type="file"]{max-width:100%}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
