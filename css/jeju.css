@@ -161,6 +161,7 @@
 
 .movie_info .tit {
     left: 20px;
+    width: 90%;
 }
 
 .movie_info .movie_place {
@@ -173,7 +174,7 @@
 
 .movie_time {
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
     display: block;
     padding: 15px 0;
@@ -211,7 +212,7 @@
 .cafe_info {    
     display: none;
     position: relative;
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
 .cafe_info div {
