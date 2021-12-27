@@ -68,17 +68,18 @@
     z-index: 1;
 }
 
-.main_menu button {
-    background: none;
-    width : 100%;
-}
-
 .item {
     background-color: #fff;
     width: calc(50% - 5px);
     border-radius: 5px;
     box-shadow: 0 7px 19px 0 rgb(0 0 0 / 10%);
     cursor: pointer;
+}
+
+.item button {
+    background: none;
+    width : 100%;
+    display: block;
 }
 
 .item p:first-child {
