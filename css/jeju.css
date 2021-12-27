@@ -154,16 +154,17 @@
     margin-top: 10px;
     font-weight: 500;
     color: #000;
-    display: inline-block;
-    font-size: 0.9rem;
     cursor: default;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.movie_info .tit {
+    left: 20px;
 }
 
 .movie_info .movie_place {
-    position: absolute;
     right: 20px;
-    font-size: 0.8rem;
-    cursor: default;
 }
 
 .movie_info p span {
