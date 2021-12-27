@@ -80,6 +80,7 @@
     background: none;
     width : 100%;
     display: block;
+    text-align : left;
 }
 
 .item p:first-child {
