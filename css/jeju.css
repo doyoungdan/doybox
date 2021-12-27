@@ -224,8 +224,11 @@
     line-height: 2;
 }
 
+
 .menu_img {
     margin-top: 20px;
-    text-align: center;
-    border: 1px solid #e9e9e9;
+}
+
+.menu_img img {
+    width: 100%;
 }
