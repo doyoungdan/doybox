@@ -1,0 +1,156 @@
+.show {
+    display: block !important;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    max-width: 720px;
+    width: 100%;
+    z-index: 500;
+    width: 100%;
+    height: 55px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 55px;
+    cursor: default;
+    color: #fff;
+}
+
+.header a:first-child {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    line-height: 55px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+}
+
+.header a:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.inner_wrap {
+    position: relative;
+    display: block;
+    padding: 55px 0 0;
+    background: url(../images/header_bg.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.tag {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+}
+
+.tag span{
+    color: #fff;
+    background: #6437bf;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    line-height: 80px;
+    cursor: default;
+}
+
+.calendar {
+    position: relative;
+    display: block;
+    cursor: default;
+}
+
+.calendar div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.calendar .month {
+    color: #14b9cb;
+    background-color: #0e081f;
+}
+
+.calendar .month span {
+    display: block;
+    line-height: 18px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.calendar .month span strong{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.calendar .day {
+    color: #fff;
+    background-color: #26203a;
+}
+
+.calendar .day span {
+    display: block;
+    line-height: 18px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.calendar .day span strong{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.calendar .day:last-child {
+    background: #14b9cb;
+}
+
+.outer_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.donation_info {    
+    position: relative;
+    padding: 20px;
+}
+
+.donation_info p {
+    font-size: 1.0rem;
+    line-height: 2;
+}
+
+.donation_img {
+    margin-top: 20px;
+}
+
+.donation_img img {
+    width: 100%;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>DOYOUNG THEATER, DOYBOX</title>
+    <script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/movie.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1>영화 선택</h1>
+            <a href="https://doybox.site/main.html"><i class="zmdi zmdi-close"></i></a>
+        </div>
+        <div class="choice_text">
+            <p>최대 1개까지 선택할 수 있습니다.</p>
+            <span class="cafe_tag">특전 안내 <i class="zmdi zmdi-close"></i></span>
+            <span class="donation_tag01">생리대 기부 <i class="zmdi zmdi-close"></i></span>
+            <span class="donation_tag02">문화예술지원 <i class="zmdi zmdi-close"></i></span>
+        </div>
+        <div class="movie_list">
+            <div class="bigcate">
+                <ul>
+                    <li class="cafe"><a>카페</a></li>
+                    <li class="donation"><a>기부</a></li>
+                </ul>
+            </div>
+            <div class="smallcate">
+                <ul>
+                    <li class="small_cafe one"><a>특전 안내</a></li>
+                    <li class="small_danation two"><a>생리대 기부</a></li>
+                    <li class="small_danation thr"><a>문화예술지원</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_btn">
+            <div class="btn_before">
+                <a>선택 완료</a>
+            </div> 
+            <div class="cafebtn 01">
+                <button type="button" onclick="location.href='https://doybox.site/cafe.html'">
+                    <a>선택 완료</a>
+                </button>
+            </div>
+            <div class="donationbtn 02">
+                <button type="button" onclick="location.href='https://doybox.site/donation01.html'">
+                    <a>선택 완료</a>
+                </button>
+            </div>
+            <div class="donationbtn 03">
+                <button type="button" onclick="location.href='https://doybox.site/donation02.html'">
+                    <a>선택 완료</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".cafe").on("click", function () {
+                $(this).addClass("on");
+                $(".donation").removeClass("on");
+                $(".small_cafe").addClass("show");
+                $(".small_danation").removeClass("show");
+            });
+            $(".one").on("click", function () {
+                $(this).addClass("on");
+                $(".two").removeClass("on");
+                $(".thr").removeClass("on");
+                $(".btn_before").hide();
+                $(".01").show();
+                $(".02").hide();
+                $(".03").hide();
+                $(".cafe_tag").show();
+                $(".donation_tag01").hide();
+                $(".donation_tag02").hide();
+                $(".choice_text p").hide();
+            });
+            $(".cafe_tag").on("click", function () {
+                $(this).hide();
+                $(".small_cafe").removeClass("show");
+                $(".small_cafe").removeClass("on");
+                $(".cafe").removeClass("on");
+                $(".01").hide();
+                $(".02").hide();
+                $(".03").hide();
+                $(".btn_before").show();
+                $(".choice_text p").show();
+            });
+            $(".donation").on("click", function () {
+                $(this).addClass("on");
+                $(".cafe").removeClass("on");
+                $(".small_danation").addClass("show");
+                $(".small_cafe").removeClass("show");
+            });
+            $(".two").on("click", function () {
+                $(this).addClass("on");
+                $(".one").removeClass("on");
+                $(".thr").removeClass("on");
+                $(".btn_before").hide();
+                $(".01").hide();
+                $(".02").show();
+                $(".03").hide();
+                $(".cafe_tag").hide();
+                $(".donation_tag01").show();
+                $(".donation_tag02").hide();
+                $(".choice_text p").hide();
+            });
+            $(".donation_tag01").on("click", function () {
+                $(this).hide();
+                $(".small_danation").removeClass("show");
+                $(".small_danation").removeClass("on");
+                $(".donation").removeClass("on");
+                $(".01").hide();
+                $(".02").hide();
+                $(".03").hide();
+                $(".btn_before").show();
+                $(".choice_text p").show();
+            });
+            $(".thr").on("click", function () {
+                $(this).addClass("on");
+                $(".one").removeClass("on");
+                $(".two").removeClass("on");
+                $(".btn_before").hide();
+                $(".01").hide();
+                $(".02").hide();
+                $(".03").show();
+                $(".cafe_tag").hide();
+                $(".donation_tag01").hide();
+                $(".donation_tag02").show();
+                $(".choice_text p").hide();
+            });
+            $(".donation_tag02").on("click", function () {
+                $(this).hide();
+                $(".small_danation").removeClass("show");
+                $(".small_danation").removeClass("on");
+                $(".donation").removeClass("on");
+                $(".01").hide();
+                $(".02").hide();
+                $(".03").hide();
+                $(".btn_before").show();
+                $(".choice_text p").show();
+            });
+        });
+    </script>
+</body>
+</html>

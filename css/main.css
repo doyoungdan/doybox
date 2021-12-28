@@ -141,7 +141,8 @@
     margin: 8px 0;
 }
 
-.bottom_menu li {
+.bottom_menu button {
+    background: none;
     float: left;
     width: 33.3%;
     text-align: center;
@@ -154,7 +155,7 @@
     margin: 0;
     font-size: 0.7rem;
     line-height: 6.5;
-}
+}   
 
 .bottom_menu li.click {
     color: #14b9cb;
