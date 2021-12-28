@@ -147,6 +147,7 @@
     width: 33.3%;
     text-align: center;
     font-size: 1.2rem;
+    color: #393939 ! important;
 }
 
 .bottom_menu li span {
@@ -155,10 +156,11 @@
     margin: 0;
     font-size: 0.7rem;
     line-height: 6.5;
+    color: #393939 ! important;
 }   
 
 .bottom_menu li.click {
-    color: #14b9cb;
+    color: #14b9cb  ! important;;
 }
 
 .bottom_menu .home {
