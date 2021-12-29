@@ -137,13 +137,106 @@
     padding-bottom: 20px;
 }
 
-.donation_info {    
+.cafe_info {    
     position: relative;
     padding: 20px;
 }
 
-.donation_info p {
-    font-size: 1.0rem;
-    line-height: 2;
+.cafe_nav {
+    padding: 0 20px;
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
 }
 
+.cafe_nav_scroll {
+    padding: 15px 0 0;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.cafe_nav_scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.cafe_nav_scroll ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-scrolling: touch;
+}
+
+.cafe_nav_scroll ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.cafe_nav_scroll li {
+    display: inline-block;
+    line-height: 24px;
+    color: #999;
+    padding-bottom: 4px;
+    margin-right: 15px;
+}
+
+.cafe_nav_scroll li.on {
+    color: #030303;
+    font-weight: 700;
+    border-bottom: 2px solid #030303;
+}
+
+.cafe_info {
+    display: none;
+}
+
+.info {
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+.info_list {
+    display: block;
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.subtit {
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+}   
+
+.infoday {
+    font-size: 0.8rem;
+    color: #14b9cb;
+}
+
+.infoday span {
+    color: #6437bf;
+}
+
+.info_list i {
+    float: right;
+    color: #999;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.info_img {
+    display: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.info_img img {
+    width: 100%;
+}
+
+.smalltxt {
+    font-size: 0.7rem;
+}
