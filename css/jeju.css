@@ -74,7 +74,7 @@
     border-radius: 25px;
     font-size: 0.9rem;
     line-height: 80px;
-    cursor: default;
+    cursor: pointer;
 }
 
 .calendar {
@@ -111,6 +111,7 @@
 .calendar .day {
     color: #fff;
     background-color: #26203a;
+    cursor: pointer;
 }
 
 .calendar .day span {
@@ -125,7 +126,7 @@
     font-size: 0.9rem;
 }
 
-.calendar .day:last-child {
+.calendar .day.click {
     background: #14b9cb;
 }
 
@@ -226,11 +227,121 @@
     line-height: 2;
 }
 
-
 .menu_img {
     margin-top: 20px;
 }
 
 .menu_img img {
     width: 100%;
+}
+
+.outer_wrap02 {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.cafe_info02 {    
+    position: relative;
+    padding: 20px;    
+    display: none;
+    cursor: pointer;
+}
+
+.cafe_nav {
+    padding: 0 20px;
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cafe_nav_scroll {
+    padding: 15px 0 0;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.cafe_nav_scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.cafe_nav_scroll ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-scrolling: touch;
+}
+
+.cafe_nav_scroll ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.cafe_nav_scroll li {
+    display: inline-block;
+    line-height: 24px;
+    color: #999;
+    padding-bottom: 4px;
+    margin-right: 15px;
+}
+
+.cafe_nav_scroll li.on {
+    color: #030303;
+    font-weight: 700;
+    border-bottom: 2px solid #030303;
+}
+
+.info {
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+.info_list {
+    display: block;
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.subtit {
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+}   
+
+.infoday {
+    font-size: 0.8rem;
+    color: #14b9cb;
+}
+
+.infoday span {
+    color: #6437bf;
+}
+
+.info_list i {
+    float: right;
+    color: #999;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.info_img {
+    display: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.info_img img {
+    width: 100%;
+}
+
+.smalltxt {
+    font-size: 0.7rem;
 }
