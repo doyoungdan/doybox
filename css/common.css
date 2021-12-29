@@ -15,6 +15,12 @@ body {
     color: #333;
     font-weight: 400;
 	font-family: 'Noto Sans KR', sans-serif;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
 h1, h2, h3, h4, h5, h6, ul, li, span, p, button{
 	font-weight: normal;
